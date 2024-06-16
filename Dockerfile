@@ -13,5 +13,7 @@ COPY . .
 # Compile the C program
 RUN gcc -o myprog myprog.c
 
+EXPOSE 8080
+
 # Run the executable
 CMD ["./myprog"]
